@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>.B-bottech Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    html, body {
+      overflow-x: hidden;
+      background: linear-gradient(to right, #f4f4f4, #cbe6cdec);
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 36px;
+      font-weight: 900;
+      color: #000;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
+      margin-right: 20px;
+    }
+    .logo span {
+      color: #95BF47;
+      font-family: 'Brush MT', cursive;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background: #e9e9e9;
+      transition: .3s;
+    }
+    nav ul li a:hover {
+      background: #95BF47;
+      color: #fff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all 0.8s ease-out;
+    }
+    section.slide-in-left,
+    section.slide-in-right {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .highlight {
+      background: #fff;
+      padding: 30px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    }
+    .title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    .skills-bar {
+      margin: 10px 0;
+      text-align: left;
+    }
+    .skills-bar .label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .skills-bar .bar {
+      width: 100%;
+      background: #ccc;
+      border-radius: 10px;
+    }
+    .skills-bar .bar-fill {
+      height: 20px;
+      background: #000;
+      border-radius: 10px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.1);
+      display: inline-block;
+      width: 250px;
+      height: 200px;
+      vertical-align: top;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      font-size: 14px;
+      color: #333;
+    }
+    .email-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #111;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    iframe#chatbase-chat-frame {
+      position: fixed !important;
+      bottom: 80px !important;
+      right: 20px !important;
+      max-width: 380px !important;
+      z-index: 9999 !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    @media(max-width:768px){
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">.B-<span>BOTTECH</span></div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2 class="title"><span style="color:#222;font-weight:bold;">Professional</span>
+        <span style="color:#196611;font-weight:bold;">Frontend Developer & Graphic Designer</span></h2>
+    <p>I build beautiful, fast websites using HTML, CSS, and JavaScript. I also create amazing designs with CorelDraw and Photoshop.</p>
+  </section>
+
+  <section id="skills" class="highlight">
+    <h2 class="title">My Skills</h2>
+    <div class="skills-bar">
+      <div class="label">CorelDraw – 98%</div>
+      <div class="bar"><div class="bar-fill" style="width:98%"></div></div>
+    </div>
+    <div class="skills-bar">
+      <div class="label">Adobe Photoshop – 80%</div>
+      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+    </div>
+    <div class="skills-bar">
+      <div class="label">HTML/CSS – 90%</div>
+      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skills-bar">
+      <div class="label">JavaScript – 85%</div>
+      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2 class="title">Portfolio Samples</h2>
+    <div class="card">Landing Page Design</div>
+    <div class="card">Brand Logo Design</div>
+    <div class="card">Interactive Web UI</div>
+  </section>
+
+  <section id="pricing" class="highlight">
+    <h2 class="title">Pricing</h2>
+    <div class="card">Basic<br><br><strong>$100</strong></div>
+    <div class="card">Standard<br><br><strong>$250</strong></div>
+    <div class="card">Premium<br><br><strong>$500</strong></div>
+  </section>
+
+  <section id="clients">
+    <h2 class="title">People I’ve Worked With</h2>
+    <div class="card"><strong>Aliyu M.</strong><br>“Great frontend and branding work.”</div>
+    <div class="card"><strong>Sarah J.</strong><br>“Design was perfect for our brand.”</div>
+  </section>
+
+  <section id="websites" class="highlight">
+    <h2 class="title">Websites I’ve Built</h2>
+    <div class="card">frontendlaunch.com</div>
+    <div class="card">graphicvisionpro.net</div>
+  </section>
+
+  <section id="contact">
+    <h2 class="title">Let’s Work Together</h2>
+    <p>Email me: bbottech40@gmail.com</p>
+    <a href="mailto:bbottech40@gmail.com" class="email-btn">Send Email</a>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> .B-bottech. All rights reserved.
+  </footer>
+  <!-- Chatbase Script -->
+  <script>
+  (function(){
+    if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+      window.chatbase = (...args) => {
+        if (!window.chatbase.q) { window.chatbase.q = [] }
+        window.chatbase.q.push(args)
+      };
+      window.chatbase = new Proxy(window.chatbase, {
+        get(target, prop) {
+          if (prop === "q") return target.q;
+          return (...args) => target(prop, ...args);
+        }
+      });
+    }
+    const onLoad = function () {
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = "7GMjVTUQBmrbZ0Kdaaozd";
+      script.domain = "www.chatbase.co";
+      document.body.appendChild(script);
+    };
+    if (document.readyState === "complete") { onLoad(); }
+    else { window.addEventListener("load", onLoad); }
+  })();
+  </script>
+
+  <!-- Year Script -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Slide Scroll Effect -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(entry.target.id.length % 2 === 0 ? "slide-in-left" : "slide-in-right");
+        }
+      });
+    }, { threshold: 0.3 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
